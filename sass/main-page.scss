@@ -1,0 +1,32 @@
+// Variables
+$orange-default:#ff673a;
+//header style
+header{
+    nav:nth-child(1){
+        a:nth-child(1){
+            img{
+                width: 30px;
+                height: 30px;
+                border-radius: 8px;
+            }
+        }
+        a:nth-child(2){
+            background-color:$orange-default;
+        }
+    }
+    nav:nth-child(2){
+        ul{
+            padding-left: 41px;
+            li{
+                a{
+                    color: #272727;
+                    transition: color 0.3s ease;
+                    margin: 0 12px;
+                    &:hover{
+                        color:$orange-default ;
+                    }
+                }
+            }
+        }
+    }
+}

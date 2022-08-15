@@ -1,1 +1,19 @@
-/*# sourceMappingURL=main-page.css.map */
+header nav:nth-child(1) a:nth-child(1) img {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+}
+header nav:nth-child(1) a:nth-child(2) {
+  background-color: #ff673a;
+}
+header nav:nth-child(2) ul {
+  padding-left: 41px;
+}
+header nav:nth-child(2) ul li a {
+  color: #272727;
+  transition: color 0.3s ease;
+  margin: 0 12px;
+}
+header nav:nth-child(2) ul li a:hover {
+  color: #ff673a;
+}/*# sourceMappingURL=main-page.css.map */
