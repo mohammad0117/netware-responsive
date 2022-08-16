@@ -1,32 +1,80 @@
 // Variables
-$orange-default:#ff673a;
+$orange-default: #ff673a;
+
 //header style
-header{
-    nav:nth-child(1){
-        a:nth-child(1){
-            img{
-                width: 30px;
-                height: 30px;
-                border-radius: 8px;
-            }
+header {
+  nav:nth-child(1) {
+    a:nth-child(1) {
+      img {
+        width: 30px;
+        height: 30px;
+        border-radius: 8px;
+      }
+    }
+    a:nth-child(2) {
+      background-color: $orange-default;
+      .fa-phone {
+        animation: phone 0.9s ease infinite;
+      }
+    }
+    
+  }
+  nav:nth-child(2) {
+    ul {
+      padding-left: 41px;
+      li {
+        a {
+          color: #272727;
+          transition: color 0.3s ease;
+          margin: 0 12px;
+          &:hover {
+            color: $orange-default;
+          }
         }
-        a:nth-child(2){
-            background-color:$orange-default;
+      }
+    }
+    span{
+        cursor: pointer;
+        span:nth-child(1){
+            top: -5px;
+        }
+        span{
+            width: 20px;
+            height: 2px;
+            background-color:#272727 ;
+        }
+        span:nth-child(2){
+            margin: 5px 0;
         }
     }
-    nav:nth-child(2){
-        ul{
-            padding-left: 41px;
-            li{
-                a{
-                    color: #272727;
-                    transition: color 0.3s ease;
-                    margin: 0 12px;
-                    &:hover{
-                        color:$orange-default ;
-                    }
-                }
+  }
+  ul{
+    display: none;
+    li {
+        a {
+          color: #272727 !important;
+          transition: color 0.3s ease;
+          margin: 0 12px;
+          &:hover {
+            color: $orange-default !important;
+          }
+        }
+      }
+      li:nth-last-child(1){
+        margin-right: 11px;
+        input{
+            width: 73%;
+            border: none;
+            background-color: #ECECEC;
+            border-radius: 8px;
+            &:focus{
+                outline: none;
             }
         }
-    }
+        i{
+            left: 135px;
+            top: 21px;
+        }
+      }
+  }
 }
