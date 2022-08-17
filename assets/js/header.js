@@ -1,8 +1,9 @@
 const dropDownIcon=document.querySelector('.drop-icon');
+const menu=document.querySelector('.drop-menu');
+const header=document.querySelector('header')
 dropDownIcon.addEventListener('click',(e)=>{
-    e.currentTarget.children[0].style.transform='rotate(45deg)';
-    e.currentTarget.children[0].style.top='-1px';
-    e.currentTarget.children[1].style.visibility='hidden'
-    e.currentTarget.children[2].style.transform='rotate(-45deg)';
-    e.currentTarget.children[2].style.top='-1px';
+    e.currentTarget.classList.toggle('toggle');
+    menu.classList.toggle('d-block')
 })
+if(document.body.clientWidth > 610 && document.body.clientWidth < 767)
+header.style.padding='100px' 

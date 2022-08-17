@@ -1,5 +1,7 @@
 // Variables
 $orange-default: #ff673a;
+//custom media
+
 
 //header style
 header {
@@ -46,9 +48,25 @@ header {
         span:nth-child(2){
             margin: 5px 0;
         }
+        
     }
   }
-  ul{
+  .toggle{
+    .one-line{
+      transition: transform 0.3s ease;
+      transform: rotate(45deg);
+      top: -4px !important;
+    }
+    .two-line{
+      visibility: hidden;
+    }
+    .three-line{
+      transition: transform 0.3s ease;
+      transform: rotate(-45deg);
+      top: -4px;
+    }
+  }
+  .drop-menu{
     display: none;
     li {
         a {

@@ -35,30 +35,43 @@ header nav:nth-child(2) span span {
 header nav:nth-child(2) span span:nth-child(2) {
   margin: 5px 0;
 }
-header ul {
+header .toggle .one-line {
+  transition: transform 0.3s ease;
+  transform: rotate(45deg);
+  top: -4px !important;
+}
+header .toggle .two-line {
+  visibility: hidden;
+}
+header .toggle .three-line {
+  transition: transform 0.3s ease;
+  transform: rotate(-45deg);
+  top: -4px;
+}
+header .drop-menu {
   display: none;
 }
-header ul li a {
+header .drop-menu li a {
   color: #272727 !important;
   transition: color 0.3s ease;
   margin: 0 12px;
 }
-header ul li a:hover {
+header .drop-menu li a:hover {
   color: #ff673a !important;
 }
-header ul li:nth-last-child(1) {
+header .drop-menu li:nth-last-child(1) {
   margin-right: 11px;
 }
-header ul li:nth-last-child(1) input {
+header .drop-menu li:nth-last-child(1) input {
   width: 73%;
   border: none;
   background-color: #ECECEC;
   border-radius: 8px;
 }
-header ul li:nth-last-child(1) input:focus {
+header .drop-menu li:nth-last-child(1) input:focus {
   outline: none;
 }
-header ul li:nth-last-child(1) i {
+header .drop-menu li:nth-last-child(1) i {
   left: 135px;
   top: 21px;
 }/*# sourceMappingURL=main-page.css.map */
